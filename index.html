@@ -3,328 +3,189 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sadibne Munsur Career Intake</title>
+<title>Saad Ibn Mansur — Community Development Portfolio</title>
+<meta name="description" content="Community development and programme coordination in Tangail, Bangladesh — livelihood projects, flood response, and the documented evidence behind them.">
+<meta name="theme-color" content="#0B2545">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Bengali:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=202609230737">
 </head>
-<body style="margin:0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600&display=swap">
-<style>
-:root{
-  --ink:#1B2430; --ink-2:#4A5563; --ink-3:#7A8493;
-  --ground:#F4F6F8; --paper:#FFFFFF; --line:#D6DCE3; --line-2:#E8ECF0;
-  --accent:#1F5F8B; --accent-ink:#FFFFFF; --accent-soft:#E4EEF6;
-  --must:#B3261E; --must-soft:#FBE9E7;
-  --high:#9A6700; --high-soft:#FFF4D6;
-  --nice:#4A6B5A; --nice-soft:#E6F0EA;
-  --ok:#2E7D4F; --focus:#1F5F8B;
-}
-@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --ink:#E8ECF0; --ink-2:#B5BEC9; --ink-3:#8A94A0;
-  --ground:#141A21; --paper:#1D2530; --line:#33404D; --line-2:#28323E;
-  --accent:#6FB0E0; --accent-ink:#0F1A24; --accent-soft:#213445;
-  --must:#F28B82; --must-soft:#3A2220;
-  --high:#F2C14E; --high-soft:#3A3120;
-  --nice:#8FC4A6; --nice-soft:#203028;
-  --ok:#7ED39E; --focus:#6FB0E0;
-}}
-:root[data-theme="dark"]{
-  --ink:#E8ECF0; --ink-2:#B5BEC9; --ink-3:#8A94A0;
-  --ground:#141A21; --paper:#1D2530; --line:#33404D; --line-2:#28323E;
-  --accent:#6FB0E0; --accent-ink:#0F1A24; --accent-soft:#213445;
-  --must:#F28B82; --must-soft:#3A2220;
-  --high:#F2C14E; --high-soft:#3A3120;
-  --nice:#8FC4A6; --nice-soft:#203028;
-  --ok:#7ED39E; --focus:#6FB0E0;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--ink);font-family:"Source Sans 3","Segoe UI",system-ui,sans-serif;font-size:16px;line-height:1.5}
-.bn{font-family:"Noto Sans Bengali","Source Sans 3",system-ui,sans-serif}
-h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;text-wrap:balance;margin:0}
-.bar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);}
-.bar-in{max-width:880px;margin:0 auto;padding:10px 20px;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
-.bar .name{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:17px;margin-right:auto}
-.progress{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-2);font-variant-numeric:tabular-nums}
-.progress .track{width:120px;height:6px;background:var(--line-2);border-radius:3px;overflow:hidden}
-.progress .fill{height:100%;background:var(--accent);width:0%}
-.status{font-size:13px;color:var(--ink-3);min-width:70px}
-.status.ok{color:var(--ok)}
-button{font:inherit;font-weight:600;font-size:14px;padding:7px 13px;border-radius:6px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
-button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-button:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-.wrap{max-width:880px;margin:0 auto;padding:28px 20px 80px}
-.intro{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:22px 24px;margin-bottom:28px}
-.intro h1{font-size:28px;margin-bottom:6px}
-.intro p{margin:8px 0;max-width:68ch}
-.intro .bn{color:var(--ink-2)}
-.legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px}
-.tag.must{background:var(--must-soft);color:var(--must)}
-.tag.high{background:var(--high-soft);color:var(--high)}
-.tag.nice{background:var(--nice-soft);color:var(--nice)}
-section.group{margin-bottom:34px}
-.group-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:8px;border-bottom:2px solid var(--line);margin-bottom:4px}
-.group-head h2{font-size:22px}
-.group-head .count{margin-left:auto;font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.group-note{font-size:14.5px;color:var(--ink-2);margin:8px 0 14px;max-width:70ch}
-.q{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin-bottom:10px}
-.q.done{border-left:4px solid var(--ok)}
-.q label{display:block;font-weight:600;font-size:16px}
-.q .bn{display:block;font-size:15px;color:var(--ink-2);margin-top:3px}
-.q .why{font-size:13.5px;color:var(--ink-3);margin-top:6px;max-width:70ch}
-.q .why b{color:var(--ink-2);font-weight:600}
-.q textarea,.q input,.q select{width:100%;margin-top:10px;font:inherit;font-size:15px;padding:9px 11px;border:1px solid var(--line);border-radius:6px;background:var(--ground);color:var(--ink)}
-.q textarea{min-height:88px;resize:vertical}
-.q textarea.tall{min-height:130px}
-.hintline{font-size:13px;color:var(--ink-3);margin-top:6px}
-.docs{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:18px 20px}
-.docs h2{font-size:20px;margin-bottom:8px}
-.docs ul{margin:8px 0 0;padding-left:20px;columns:2;column-gap:28px}
-.docs li{margin-bottom:5px;break-inside:avoid;font-size:15px}
-.docs .chk{display:flex;gap:8px;align-items:flex-start}
-.docs input[type=checkbox]{margin-top:5px}
-.foot{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.foot .note{font-size:13.5px;color:var(--ink-3);flex-basis:100%}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--ground);padding:10px 16px;border-radius:6px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s}
-.toast.show{opacity:1}
-@media (max-width:640px){.docs ul{columns:1}.progress .track{width:80px}}
-@media print{
-  .bar,.foot,.intro .legend,button{display:none!important}
-  body{background:#fff;color:#000}
-  .q,.intro,.docs{border:none;padding:6px 0;break-inside:avoid;background:#fff}
-  .q textarea,.q input{display:none}
-  .q .answer{display:block!important;white-space:pre-wrap;border-left:3px solid #999;padding:4px 10px;margin-top:6px;font-size:14px}
-  .q .why{display:none}
-}
-.q .answer{display:none}
-</style>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-<div class="bar"><div class="bar-in">
-  <span class="name">Career Intake — Sadibne Munsur</span>
-  <span class="progress"><span class="track"><span class="fill" id="fill"></span></span><span id="prog">0 / 0</span></span>
-  <span class="status" id="status">Not saved yet</span>
-  <button type="button" id="btnExport" class="primary">Export answers</button>
-  <button type="button" id="btnCopy">Copy all</button>
-  <button type="button" id="btnPrint">Print / PDF</button>
-  <button type="button" id="btnImport">Load file</button>
-  <input type="file" id="fileIn" accept=".json,.txt" hidden>
-</div></div>
-
-<div class="wrap">
-  <div class="intro">
-    <h1>Information needed for your international-development CV</h1>
-    <p>Answer as many questions as you can, in English or Bangla. <b>Exact numbers, dates and names matter far more than polished language</b> — a recruiter who finds one inflated figure discounts everything else, and UN Volunteers and BRAC verify with referees. If you don't know something, write "don't know" rather than guessing. Your answers save automatically in this browser; when finished, press <b>Export answers</b> and send the file back.</p>
-    <p class="bn">যতগুলো প্রশ্নের উত্তর দিতে পারেন দিন — বাংলা বা ইংরেজি যেকোনো ভাষায়। <b>সঠিক সংখ্যা, তারিখ ও নাম সবচেয়ে গুরুত্বপূর্ণ</b>; সুন্দর ভাষার চেয়ে নির্ভুল তথ্য অনেক বেশি কাজে লাগবে। বাড়িয়ে লিখবেন না — একটি বাড়ানো সংখ্যা ধরা পড়লে পুরো সিভির বিশ্বাসযোগ্যতা নষ্ট হয়। কিছু না জানলে "জানি না" লিখুন। উত্তর এই ব্রাউজারে স্বয়ংক্রিয়ভাবে সেভ হবে; শেষ হলে <b>Export answers</b> চাপুন এবং ফাইলটি পাঠিয়ে দিন।</p>
-    <div class="legend"><span class="tag must">Must have — CV cannot be finished without it</span><span class="tag high">High value — turns titles into a track record</span><span class="tag nice">Nice to have</span></div>
+<header class="bar">
+  <div class="bar-in">
+    <a class="mark" href="#top"><span class="dot">SM</span><span><b>Saad Ibn Mansur</b><span>Community development · Bangladesh</span></span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#leadership">Leadership</a>
+      <a href="#training">Certification</a><a href="#gallery">Gallery</a><a href="#writing">Writing</a><a href="#evidence">Evidence</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-2" id="navCv" href="#" download>CV</a>
   </div>
+</header>
 
-  <div id="form"></div>
+<main id="main">
+  <section id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow" id="heroEyebrow"></p>
+        <h1 id="heroName"></h1>
+        <p class="lead" id="heroLede"></p>
+        <div class="pills" id="heroPills"></div>
+        <div class="hero-cta" id="heroCta"></div>
+      </div>
+      <div class="hero-media">
+        <div class="pframe">
+          <span class="shape"></span>
+          <img id="portrait" alt="">
+          <div class="badge" id="heroBadge"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="docs" id="docs">
-    <h2>Documents to collect and scan (PDF or clear photo)</h2>
-    <p class="bn" style="margin:0 0 6px;color:var(--ink-2);font-size:14.5px">নিচের কাগজগুলো সংগ্রহ করে স্ক্যান বা পরিষ্কার ছবি তুলে রাখুন। যেগুলো পেয়েছেন টিক দিন।</p>
-    <ul id="doclist"></ul>
+  <section class="rail" aria-label="Results in numbers">
+    <div class="wrap"><div class="rail-grid" id="metrics"></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="panel panel-grid">
+        <div>
+          <p class="statement" id="statement"></p>
+          <div class="statement-body" id="aboutBody"></div>
+        </div>
+        <div class="focus">
+          <h4>Areas of focus</h4>
+          <ul id="focusList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="sec-tight">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Selected work</p><h2>Two projects, start to finish</h2></div>
+        <p id="workIntro"></p>
+      </div>
+      <div id="spreads"></div>
+    </div>
+  </section>
+
+  <section id="experience" class="sec tint">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Record</p><h2>Work &amp; project experience</h2></div>
+        <p id="expIntro"></p>
+      </div>
+      <div id="records"></div>
+    </div>
+  </section>
+
+  <section id="leadership" class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Voluntary</p><h2>Community leadership</h2></div>
+        <p id="leadIntro"></p>
+      </div>
+      <div class="lead-grid" id="leadGrid"></div>
+    </div>
+  </section>
+
+  <section id="training" class="sec-tight">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">International certification</p><h2>Trained to humanitarian sector standard</h2></div>
+        <p id="trainIntro"></p>
+      </div>
+      <div class="cert-grid" id="certGrid"></div>
+      <p class="cert-next" id="certNext"></p>
+    </div>
+  </section>
+
+
+  <section id="gallery" class="sec tint">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Archive</p><h2>Evidence gallery</h2></div>
+        <p id="galIntro"></p>
+      </div>
+      <div class="gal-bar">
+        <div class="filters" id="filters" role="group" aria-label="Filter the archive by category"></div>
+        <p class="gal-count" id="galCount"></p>
+      </div>
+      <div class="gal-grid" id="galGrid"></div>
+      <p class="gal-empty" id="galEmpty" hidden>No records in this category yet.</p>
+      <div class="gal-more"><button type="button" class="btn btn-2" id="galMore">Show more records</button></div>
+      <p class="gal-note" id="galNote"></p>
+    </div>
+  </section>
+
+  <section id="writing" class="sec-tight">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">In print</p><h2>Writing &amp; media</h2></div>
+        <p id="writingIntro"></p>
+      </div>
+      <div class="write-grid">
+        <div id="featWriting"></div>
+        <div class="stack" id="stackWriting"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evidence" class="sec tint">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Verification</p><h2>Every figure has a paper trail</h2></div>
+        <p id="evIntro"></p>
+      </div>
+      <div class="ev-top">
+        <div id="honour"></div>
+        <div class="ev-counts" id="evCounts"></div>
+      </div>
+      <div id="documents"></div>
+      <div class="note" id="privacy"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="close">
+    <div class="wrap">
+      <div class="close-grid">
+        <div>
+          <p class="eyebrow" style="color:#9EC4EA">Contact</p>
+          <h2 id="closeHead"></h2>
+          <p class="lead" id="closeText"></p>
+          <dl class="cinfo" id="cinfo"></dl>
+          <div class="hero-cta" id="closeCta"></div>
+        </div>
+        <div class="cport"><img id="portrait2" alt=""></div>
+      </div>
+      <p class="endline" id="endline"></p>
+    </div>
+  </section>
+</main>
+
+<div class="viewer" id="lb" role="dialog" aria-modal="true" aria-label="Record viewer" hidden>
+  <button type="button" class="lbb lb-x" id="lbX" aria-label="Close">×</button>
+  <button type="button" class="lbb lb-n lb-p" id="lbP" aria-label="Previous record">‹</button>
+  <div class="vshell">
+    <div class="vstage" id="vStage"></div>
+    <div class="vmeta">
+      <span class="cat" id="vCat"></span>
+      <h3 id="vTitle"></h3>
+      <p class="desc" id="vDesc"></p>
+      <dl class="vfields" id="vFields"></dl>
+      <p class="vpos" id="vPos"></p>
+    </div>
   </div>
-
-  <div class="foot">
-    <button type="button" id="btnExport2" class="primary">Export answers</button>
-    <button type="button" id="btnCopy2">Copy all</button>
-    <button type="button" id="btnClear">Clear everything</button>
-    <span class="note">Export produces a text file with every question and your answer, plus a machine-readable copy. Nothing is sent anywhere automatically — you send the file yourself.</span>
-  </div>
+  <button type="button" class="lbb lb-n lb-f" id="lbF" aria-label="Next record">›</button>
 </div>
-<div class="toast" id="toast"></div>
 
-<script>
-const S = [
- { id:'coop', pri:'must', title:'1. Your job at the cooperative (Somobai Somiti)', note:'This is the most important block. Every international recruiter first counts months of relevant experience and searches for exact finance words (ledger, voucher, reconciliation, audit, financial statements). Right now the CV has none of them.', bn:'এটিই সবচেয়ে গুরুত্বপূর্ণ অংশ। আন্তর্জাতিক নিয়োগকারীরা প্রথমে অভিজ্ঞতার মাস গোনে এবং হিসাবরক্ষণের নির্দিষ্ট শব্দ খোঁজে।', q:[
-  ['coop_name','Full registered name of the cooperative, its type (savings & credit / multipurpose / other), registration number, and the Upazila Cooperative Office it reports to','সমবায় সমিতির পূর্ণ নিবন্ধিত নাম, ধরন (সঞ্চয় ও ঋণদান / বহুমুখী / অন্য), নিবন্ধন নম্বর এবং কোন উপজেলা সমবায় অফিসের অধীনে','Employers are verified; the registration proves it is a regulated institution.'],
-  ['coop_dates','Start month/year and end month/year (or "still working"). Full-time or part-time? If part-time, hours per week. Job title on your appointment letter.','শুরু ও শেষের মাস/বছর (এখনো চাকরি করলে "চলমান")। ফুল-টাইম না পার্ট-টাইম? পার্ট-টাইম হলে সপ্তাহে কত ঘণ্টা। নিয়োগপত্রে পদের নাম কী?','UN forms require exact dates and full-time/part-time status; months decide which grades you are eligible for.','input'],
-  ['coop_sup','Supervisor’s name, role (manager / committee chairman) and phone or email','সুপারভাইজারের নাম, পদ (ম্যানেজার / সভাপতি) ও ফোন/ইমেইল','Used as a referee and for verification.','input'],
-  ['coop_scale','Number of members; approximate total member savings and loan portfolio (BDT); number of staff','সদস্য সংখ্যা; মোট সঞ্চয় ও ঋণের আনুমানিক পরিমাণ (টাকায়); কর্মী সংখ্যা','Makes your role comparable to an NGO finance assistant ("kept books for N members / BDT X").'],
-  ['coop_books','Which books did YOU personally keep? Cash book, member savings ledger, loan ledger, share register, bank book, vouchers, passbooks… Were they manual, Excel, or software (which one)?','আপনি নিজে কোন কোন খাতা/রেজিস্টার রাখতেন? ক্যাশ বই, সদস্য সঞ্চয় খাতা, ঋণ খাতা, শেয়ার রেজিস্টার, ব্যাংক বই, ভাউচার, পাসবই… হাতে লেখা, এক্সেল, নাকি সফটওয়্যার (কোনটি)?','These are the exact keywords finance vacancies filter on.','tall'],
-  ['coop_reports','Which reports did you prepare, how often, and for whom? (monthly statement for the management committee, annual accounts for the AGM, returns to the Upazila office, bank reconciliation, budget…)','কোন কোন রিপোর্ট তৈরি করতেন, কত দিন পর পর, কার জন্য? (ব্যবস্থাপনা কমিটির মাসিক হিসাব, বার্ষিক সাধারণ সভার হিসাব, উপজেলা অফিসে রিটার্ন, ব্যাংক রিকনসিলিয়েশন, বাজেট…)','"Financial reporting" needs to be specific to count.','tall'],
-  ['coop_audit','Your role in the annual Department of Cooperatives audit: what you prepared, when the audits happened, and the result (any objections or a clean report?)','সমবায় অধিদপ্তরের বার্ষিক অডিটে আপনার ভূমিকা: কী প্রস্তুত করতেন, কবে অডিট হয়েছে, ফলাফল কী (আপত্তি ছিল, নাকি ক্লিন রিপোর্ট)?','"Supported N statutory audits with no objections" is the strongest sentence an entry-level accountant can write.'],
-  ['coop_cash','Did you collect savings, disburse loans or recover loans? Approximate monthly amounts handled (BDT), number of members served, recovery rate if known','সঞ্চয় আদায়, ঋণ বিতরণ বা ঋণ আদায় করতেন? মাসে আনুমানিক কত টাকা হ্যান্ডেল করতেন, কতজন সদস্য, আদায়ের হার (জানা থাকলে)','Micro-finance-adjacent skill valued by BRAC, ASA, SSS and cash-and-voucher programmes.'],
-  ['coop_improve','Anything you improved or introduced (e.g. moved records to Excel, a new register, faster reporting, found and corrected an error, VAT/TDS handling)','কিছু উন্নতি বা নতুন কিছু চালু করেছেন? (যেমন খাতা এক্সেলে নেওয়া, নতুন রেজিস্টার, দ্রুত রিপোর্টিং, ভুল খুঁজে সংশোধন, ভ্যাট/টিডিএস)','Gives an achievement bullet and an interview story for "innovation".'],
-  ['coop_cert','Can you get a dated, signed experience certificate on the cooperative’s letterhead listing your duties? If yes, by when?','সমিতির প্যাডে তারিখসহ স্বাক্ষরিত, দায়িত্বের বিবরণসহ অভিজ্ঞতার সনদ পেতে পারবেন? পারলে কবে নাগাদ?','This single document matters more than anything else on the list.','input'],
- ]},
- { id:'timeline', pri:'must', title:'2. Complete timeline since 2019', note:'Every job, internship, tuition, family business, study period or gap, with month/year. UN and INGO forms reject unexplained gaps.', bn:'২০১৯ থেকে এখন পর্যন্ত প্রতিটি চাকরি, ইন্টার্নশিপ, টিউশনি, পারিবারিক ব্যবসা, পড়াশোনা বা বিরতি — মাস/বছরসহ। ফাঁক থাকলে জাতিসংঘের ফর্মে সমস্যা হয়।', q:[
-  ['tl_list','List each period in order: from (month/year) – to (month/year): what you were doing, where, paid or unpaid','ক্রমানুসারে লিখুন: কোন মাস/বছর থেকে কোন মাস/বছর পর্যন্ত — কী করছিলেন, কোথায়, বেতনভুক্ত না অবৈতনিক','A clean, gap-free chronology is required for the UN P11 and every online profile.','tall'],
- ]},
- { id:'byso', pri:'must', title:'3. Bangladesh Young Star Social Organization (BYSO) — your presidency', note:'This is your strongest differentiator and is currently only a title. BRAC’s Young Professionals Programme and UN Volunteers explicitly assess demonstrated leadership with results.', bn:'এটি আপনার সবচেয়ে বড় শক্তি, কিন্তু এখন শুধু একটি পদের নাম। ব্র্যাক ইয়াং প্রফেশনালস ও জাতিসংঘ স্বেচ্ছাসেবক কর্মসূচি ফলাফলসহ নেতৃত্বের প্রমাণ চায়।', q:[
-  ['byso_what','Is your organisation a Tangail unit of the national “Bangladesh Youngster Social Organization” (Comilla-based) or an independent Tangail organisation? When was it founded and what does it do (one or two lines)?','আপনার সংগঠনটি কি জাতীয় "বাংলাদেশ ইয়াংস্টার সোশ্যাল অর্গানাইজেশন"-এর টাঙ্গাইল শাখা, নাকি স্বতন্ত্র টাঙ্গাইলভিত্তিক সংগঠন? কবে প্রতিষ্ঠিত এবং কী কাজ করে (এক-দুই লাইনে)?','Recruiters check organisations online; the description must be accurate and consistent.'],
-  ['byso_reg','Is it enlisted with the Department of Youth Development or Department of Social Services? Registration/enlistment number and year, if yes','যুব উন্নয়ন অধিদপ্তর বা সমাজসেবা অধিদপ্তরে তালিকাভুক্ত/নিবন্ধিত? হলে নম্বর ও সাল','Government enlistment turns an informal presidency into a recognised credential. If not enlisted, it is worth doing now (free, ~10 days).','input'],
-  ['byso_term','Your term as President: from (month/year) to (month/year or present). Previous positions held in BYSO, if any','সভাপতি হিসেবে মেয়াদ: কোন মাস/বছর থেকে কোন মাস/বছর (বা চলমান)। এর আগে অন্য কোনো পদে ছিলেন?','Dates make it countable.','input'],
-  ['byso_size','Size of the executive committee; number of general members; number of active volunteers','কার্যকরী কমিটির সদস্য সংখ্যা; সাধারণ সদস্য সংখ্যা; সক্রিয় স্বেচ্ছাসেবক সংখ্যা','"Led a 15-member committee and 60 volunteers" is a leadership metric.','input'],
-  ['byso_activities','Main activities each year, WITH NUMBERS: events held, people/families reached, blood units, trees planted, students supported, relief distributed, etc.','প্রতি বছরের প্রধান কার্যক্রম — সংখ্যাসহ: কতটি অনুষ্ঠান, কতজন মানুষ/পরিবার উপকৃত, কত ব্যাগ রক্ত, কতটি গাছ, কতজন শিক্ষার্থী, ত্রাণ বিতরণ ইত্যাদি','Unquantified volunteering is discounted to zero; quantified volunteering is what these programmes reward.','tall'],
-  ['byso_money','Funds raised and managed per year (BDT), where the money came from, and how it was accounted for (receipts, expenditure statements, bank account, audit by members?)','প্রতি বছর কত টাকা সংগ্রহ ও ব্যবস্থাপনা করেছেন, টাকা কোথা থেকে এসেছে, এবং হিসাব কীভাবে রাখা হয়েছে (রসিদ, ব্যয় বিবরণী, ব্যাংক হিসাব, সদস্যদের অডিট?)','Links your community role to finance and integrity.'],
-  ['byso_partners','Partners you worked with: UNO office, Union Parishad / Pourashava, schools, businesses, NGOs, other organisations — and what each partnership achieved','যাদের সঙ্গে কাজ করেছেন: ইউএনও অফিস, ইউনিয়ন পরিষদ/পৌরসভা, স্কুল, ব্যবসা প্রতিষ্ঠান, এনজিও, অন্য সংগঠন — এবং প্রতিটি অংশীদারিত্বে কী অর্জন হয়েছে','Maps to the UNICEF competency "Builds and maintains partnerships".'],
-  ['byso_flagship','Two flagship achievements, each with numbers: what the problem was, what YOU personally did, team size, budget, result','সবচেয়ে গর্বের দুটি অর্জন — সংখ্যাসহ: সমস্যা কী ছিল, আপনি নিজে কী করেছেন, দলের আকার, বাজেট, ফলাফল','Becomes the headline bullets and your interview stories.','tall'],
-  ['byso_links','Facebook page link, photos, news clippings, certificates — list what exists','ফেসবুক পেজের লিংক, ছবি, পত্রিকার কাটিং, সনদ — যা আছে তালিকা করুন','Verification and LinkedIn.'],
- ]},
- { id:'identity', pri:'must', title:'4. Identity and eligibility', note:'Mismatched names fail background checks; your age decides which programmes are open (BRAC YPP ≤30, ASA ≤32, UN Youth Volunteer <26).', bn:'নাম না মিললে ব্যাকগ্রাউন্ড চেক আটকে যায়; বয়সের ওপর নির্ভর করে কোন কর্মসূচিতে আবেদন করা যাবে।', q:[
-  ['id_name','Your name exactly as written on your NID and on your academic certificates (if they differ, write both)','জাতীয় পরিচয়পত্র ও শিক্ষা সনদে আপনার নাম হুবহু যেভাবে লেখা (ভিন্ন হলে দুটোই লিখুন)','Must match every application form.','input'],
-  ['id_dob','Date of birth (as on NID)','জন্ম তারিখ (এনআইডি অনুযায়ী)','Age limits for BRAC YPP, ASA and UNV Youth.','input'],
-  ['id_reloc','Are you willing to relocate? To Cox’s Bazar? Anywhere in Bangladesh? From what date are you available?','অন্য জেলায় যেতে রাজি? কক্সবাজারে? বাংলাদেশের যেকোনো জায়গায়? কবে থেকে যোগ দিতে পারবেন?','Most UN/INGO assistant posts are in Cox’s Bazar; this decides which vacancies to target.','input'],
-  ['id_contact','Confirm mobile number, email, present address and permanent address. Do you have a LinkedIn profile (link)?','মোবাইল নম্বর, ইমেইল, বর্তমান ও স্থায়ী ঠিকানা নিশ্চিত করুন। লিংকডইন প্রোফাইল আছে? (লিংক)','Contact block of the CV; LinkedIn is expected by INGO/UN recruiters.'],
- ]},
- { id:'edu', pri:'must', title:'5. Education details', note:'Degree subject is a hard filter; the subject list supports claims like "knowledge of auditing and taxation".', bn:'ডিগ্রির বিষয় একটি কঠোর ফিল্টার; বিষয়তালিকা "অডিটিং/ট্যাক্সেশন জানেন" এই দাবিকে সমর্থন করে।', q:[
-  ['edu_degree','Exact degree title (BBA Honours / B.Com Honours / BSS… in Accounting), session years (e.g. 2018–19 to 2022–23), year the final result was published, National University registration number','ডিগ্রির সঠিক নাম (বিবিএ অনার্স / বিকম অনার্স… হিসাববিজ্ঞান), সেশন (যেমন ২০১৮-১৯ থেকে ২০২২-২৩), চূড়ান্ত ফল প্রকাশের বছর, জাতীয় বিশ্ববিদ্যালয় রেজিস্ট্রেশন নম্বর','Accurate education section for the P11.'],
-  ['edu_subjects','Subjects studied that included auditing, taxation, cost/management accounting, financial statement analysis, business statistics, computer applications — list them','অডিটিং, ট্যাক্সেশন, কস্ট/ম্যানেজমেন্ট অ্যাকাউন্টিং, আর্থিক বিবরণী বিশ্লেষণ, পরিসংখ্যান, কম্পিউটার — যে বিষয়গুলো পড়েছেন তালিকা করুন','Keyword support for finance vacancies.'],
-  ['edu_hsc','HSC group (Business Studies / Science / Humanities) and years at Notre Dame College; SSC school name spelling and years','এইচএসসি গ্রুপ (ব্যবসায় শিক্ষা / বিজ্ঞান / মানবিক) ও নটর ডেম কলেজে পড়ার বছর; এসএসসি স্কুলের নামের সঠিক বানান ও বছর','Consistency across forms.','input'],
- ]},
- { id:'english', pri:'must', title:'6. English — honest self-assessment', note:'UN posts require "fluency"; INGOs require English report-writing; written tests eliminate at shortlist stage. A wrong self-rating is screened out automatically.', bn:'জাতিসংঘের পদে ইংরেজিতে "fluency" লাগে; আইএনজিও-তে ইংরেজি রিপোর্ট লেখা লাগে; লিখিত পরীক্ষায় বাদ পড়া সাধারণ। ভুল স্ব-মূল্যায়ন স্বয়ংক্রিয়ভাবে বাদ দেয়।', q:[
-  ['en_rate','Rate yourself honestly — Reading: Basic / Working / Fluent; Writing: Basic / Working / Fluent; Speaking: Basic / Working / Fluent','সততার সঙ্গে নিজেকে মূল্যায়ন করুন — পড়া: Basic / Working / Fluent; লেখা: Basic / Working / Fluent; বলা: Basic / Working / Fluent','Decides whether to target UN posts now or after 6–12 months of language work.','input'],
-  ['en_test','Any English test score (IELTS, TOEFL, Duolingo) with date? Have you ever worked, studied or written in English regularly?','কোনো ইংরেজি পরীক্ষার স্কোর (IELTS, TOEFL, Duolingo) ও তারিখ? নিয়মিত ইংরেজিতে কাজ, পড়াশোনা বা লেখালেখি করেছেন?','Evidence of proficiency.','input'],
-  ['en_sample','Paste here (or describe) one thing you have written in English — any length: an email, a report, an essay','ইংরেজিতে লেখা যেকোনো একটি লেখা এখানে পেস্ট করুন বা বর্ণনা দিন — ইমেইল, রিপোর্ট, রচনা, যেকোনো দৈর্ঘ্যের','Lets us judge the level and build a writing portfolio.','tall'],
-  ['en_comfort','Would you be comfortable today with a 1-hour written test and a 45-minute interview entirely in English? What would worry you most?','আজই যদি এক ঘণ্টার ইংরেজি লিখিত পরীক্ষা ও ৪৫ মিনিটের ইংরেজি সাক্ষাৎকার হয়, স্বচ্ছন্দ বোধ করবেন? সবচেয়ে বেশি কী নিয়ে দুশ্চিন্তা হবে?','Shapes the preparation plan.'],
- ]},
- { id:'refs', pri:'must', title:'7. Three referees', note:'UN forms require three (not relatives); INGOs call them; UNV field units contact them. Ideal mix: cooperative supervisor or chairman, a college teacher, a senior figure from a community organisation.', bn:'জাতিসংঘের ফর্মে তিনজন রেফারি লাগে (আত্মীয় নয়)। আদর্শ: সমিতির সুপারভাইজার/সভাপতি, একজন কলেজ শিক্ষক, একটি সংগঠনের সিনিয়র ব্যক্তি।', q:[
-  ['ref_1','Referee 1 — name, position, organisation, phone, email, how they know you, have they agreed?','রেফারি ১ — নাম, পদ, প্রতিষ্ঠান, ফোন, ইমেইল, আপনাকে কীভাবে চেনেন, সম্মতি দিয়েছেন?','','input'],
-  ['ref_2','Referee 2 — same details','রেফারি ২ — একই তথ্য','','input'],
-  ['ref_3','Referee 3 — same details','রেফারি ৩ — একই তথ্য','','input'],
- ]},
- { id:'roles', pri:'high', title:'8. Your other community roles — one paragraph each, with numbers and dates', note:'Several unquantified titles look like padding; three quantified roles look like a track record of partnership and results. For each: dates, what the organisation does, what YOU personally did, numbers, partners.', bn:'সংখ্যাবিহীন অনেক পদের নাম "ভরাট" মনে হয়; সংখ্যাসহ তিনটি ভূমিকা একটি প্রকৃত ট্র্যাক রেকর্ড। প্রতিটির জন্য: সময়কাল, সংগঠনটি কী করে, আপনি নিজে কী করেছেন, সংখ্যা, অংশীদার।', q:[
-  ['r_rajabari','Rajabari Honours Association — President: what is it (student/alumni association?), dates, membership size, what you led, results','রাজাবাড়ী অনার্স অ্যাসোসিয়েশন — সভাপতি: এটি কী (ছাত্র/প্রাক্তন ছাত্র সংগঠন?), সময়কাল, সদস্য সংখ্যা, কী নেতৃত্ব দিয়েছেন, ফলাফল','',''],
-  ['r_pathagar','Elenga Sadharan Pathagar — Publicity Secretary: dates; publicity/outreach you did; membership growth (from → to); reading programmes or events; audience reached','এলেঙ্গা সাধারণ পাঠাগার — প্রচার সম্পাদক: সময়কাল; কী প্রচার/আউটরিচ করেছেন; সদস্য বৃদ্ধি (কত থেকে কত); পাঠ কর্মসূচি বা অনুষ্ঠান; কতজন পৌঁছেছেন','',''],
-  ['r_majumdar','Majumdar Pathagar — Member Secretary: dates; responsibilities (minutes, membership records, coordination); book drives or programmes; numbers','মজুমদার পাঠাগার — সদস্য সচিব: সময়কাল; দায়িত্ব (কার্যবিবরণী, সদস্য তালিকা, সমন্বয়); বই সংগ্রহ অভিযান বা কর্মসূচি; সংখ্যা','',''],
-  ['r_blood','Kalihati Blood Foundation: dates; donation camps organised or supported; donors mobilised; emergency requests handled; your own donations; how the network operates (Facebook group? donor database?)','কালিহাতী ব্লাড ফাউন্ডেশন: সময়কাল; রক্তদান ক্যাম্প আয়োজন/সহায়তা; কতজন রক্তদাতা সংগ্রহ; জরুরি অনুরোধ কতটি; নিজে কতবার রক্ত দিয়েছেন; নেটওয়ার্ক কীভাবে চলে (ফেসবুক গ্রুপ? ডোনার ডাটাবেস?)','',''],
-  ['r_arthik','“Arthik Foundation” — founding member: exact name; purpose; your role in founding it; activities; beneficiaries; funds; dates','"আর্থিক ফাউন্ডেশন" — প্রতিষ্ঠাকালীন সদস্য: সঠিক নাম; উদ্দেশ্য; প্রতিষ্ঠায় আপনার ভূমিকা; কার্যক্রম; উপকারভোগী; তহবিল; সময়কাল','',''],
- ]},
- { id:'project', pri:'high', title:'9. A project you ran from start to finish', note:'UN/INGO recruiters think in projects. One well-documented project — even BDT 20,000 — demonstrates planning, budgeting, delivery and reporting.', bn:'জাতিসংঘ/আইএনজিও নিয়োগকারীরা "প্রকল্প" হিসেবে ভাবে। ২০,০০০ টাকার একটি ছোট প্রকল্পও, ভালোভাবে নথিভুক্ত হলে, পরিকল্পনা-বাজেট-বাস্তবায়ন-রিপোর্টিং প্রমাণ করে।', q:[
-  ['pj_1','Project name; objective; your exact role; duration (dates); team size; target group; area (village/union/upazila); budget and how you accounted for it; outputs; people reached; results; report written (yes/no); partners','প্রকল্পের নাম; উদ্দেশ্য; আপনার সঠিক ভূমিকা; সময়কাল; দলের আকার; লক্ষ্য জনগোষ্ঠী; এলাকা (গ্রাম/ইউনিয়ন/উপজেলা); বাজেট ও হিসাব; আউটপুট; কতজন উপকৃত; ফলাফল; রিপোর্ট লেখা হয়েছে? অংশীদার','','tall'],
-  ['pj_2','A second project, if any (same details)','দ্বিতীয় কোনো প্রকল্প থাকলে (একই তথ্য)','','tall'],
- ]},
- { id:'integrity', pri:'high', title:'10. Money handled and integrity record', note:'Finance roles are trust roles. "Handled BDT X million with clean audits" is powerful — if true.', bn:'হিসাবের চাকরি আস্থার চাকরি। "X লক্ষ টাকা হ্যান্ডেল করেছি, অডিটে কোনো আপত্তি নেই" — সত্য হলে খুব শক্তিশালী বাক্য।', q:[
-  ['int_total','Total funds you have handled — at the cooperative (per year) and in community organisations; whether every audit/account was accepted without objection; any recognition or thanks received in writing','মোট কত টাকা হ্যান্ডেল করেছেন — সমিতিতে (বছরে) ও সংগঠনগুলোতে; প্রতিটি অডিট/হিসাব বিনা আপত্তিতে গৃহীত হয়েছে কি; লিখিত কোনো স্বীকৃতি বা ধন্যবাদপত্র পেয়েছেন?','','' ],
-  ['int_story','Describe one situation where you had to refuse, correct or report something irregular involving money or records (no names needed)','টাকা বা হিসাব নিয়ে অনিয়মিত কিছু প্রত্যাখ্যান, সংশোধন বা রিপোর্ট করতে হয়েছে এমন একটি ঘটনা বর্ণনা করুন (নাম লাগবে না)','Standard integrity interview question.',''],
- ]},
- { id:'skills', pri:'high', title:'11. Software and digital skills', note:'Named in every finance and admin vacancy. Be exact — you may be tested.', bn:'প্রতিটি হিসাব/প্রশাসন পদে সফটওয়্যার দক্ষতা চাওয়া হয়। সঠিকভাবে লিখুন — পরীক্ষা হতে পারে।', q:[
-  ['sk_excel','MS Excel — which functions do you actually use? (SUM/formulas, sorting/filtering, VLOOKUP, pivot tables, charts). MS Word? PowerPoint? Google Sheets/Forms?','এমএস এক্সেল — কোন কাজগুলো সত্যিই পারেন? (সূত্র, সর্ট/ফিল্টার, VLOOKUP, পিভট টেবিল, চার্ট)। ওয়ার্ড? পাওয়ারপয়েন্ট? গুগল শিট/ফর্ম?','',''],
-  ['sk_acct','Accounting software: Tally, QuickBooks, any MFI/cooperative software — which, and how much have you used it?','হিসাব সফটওয়্যার: ট্যালি, কুইকবুকস, কোনো এমএফআই/সমবায় সফটওয়্যার — কোনটি, কতটা ব্যবহার করেছেন?','','input'],
-  ['sk_typing','Bangla typing (Bijoy / Avro) and approximate speed; English typing speed','বাংলা টাইপিং (বিজয় / অভ্র) ও আনুমানিক গতি; ইংরেজি টাইপিং গতি','Save the Children asks for Bangla typing in admin roles.','input'],
-  ['sk_other','Other: social-media page management for organisations, Canva/design, photo/video, KoboToolbox, data entry, email/Drive','অন্যান্য: সংগঠনের ফেসবুক পেজ পরিচালনা, ক্যানভা/ডিজাইন, ছবি/ভিডিও, KoboToolbox, ডাটা এন্ট্রি, ইমেইল/ড্রাইভ','','input'],
- ]},
- { id:'training', pri:'high', title:'12. Training and certificates already held', note:'Any computer, accounting, youth-leadership, first-aid, Department of Youth Development or online course, with dates and provider.', bn:'কম্পিউটার, হিসাব, যুব নেতৃত্ব, প্রাথমিক চিকিৎসা, যুব উন্নয়ন অধিদপ্তর বা অনলাইন — যেকোনো প্রশিক্ষণ, তারিখ ও প্রতিষ্ঠানসহ।', q:[
-  ['tr_list','List each: course name, provider, duration, year, certificate available (yes/no)','প্রতিটি: কোর্সের নাম, প্রতিষ্ঠান, মেয়াদ, সাল, সনদ আছে কি না','',''],
- ]},
- { id:'writing', pri:'high', title:'13. Writing and media', note:'Published writing is rare among finance candidates and supports communications roles. Also gives us pieces to translate into an English portfolio.', bn:'হিসাব পেশার প্রার্থীদের মধ্যে প্রকাশিত লেখা বিরল — এটি একটি বাড়তি শক্তি। দুটি সেরা লেখা ইংরেজিতে অনুবাদ করে পোর্টফোলিও বানানো যাবে।', q:[
-  ['wr_columns','Elenga Sahitya Sangsad columns: where are they published (magazine / newspaper / online platform — name)? Since when? How many pieces? Topics? Links or scans available?','এলেঙ্গা সাহিত্য সংসদের কলাম: কোথায় প্রকাশিত হয় (পত্রিকা / সাময়িকী / অনলাইন — নাম)? কবে থেকে? কতটি লেখা? বিষয়? লিংক বা স্ক্যান আছে?','',''],
-  ['wr_press','Tangail District Press Club: membership category, since when, any reporting or writing done, any press card','টাঙ্গাইল জেলা প্রেস ক্লাব: সদস্যপদের ধরন, কবে থেকে, কোনো রিপোর্টিং/লেখা করেছেন কি, প্রেস কার্ড আছে?','','input'],
-  ['wr_best','Paste (or name) your two best pieces of writing','আপনার সেরা দুটি লেখা পেস্ট করুন (বা নাম লিখুন)','','tall'],
- ]},
- { id:'ngo', pri:'high', title:'14. Contact with NGOs, government or disaster response', note:'"Development/humanitarian exposure" is a stated preference in UNICEF and INGO vacancies. Even small, dated involvement can be a truthful bullet.', bn:'ইউনিসেফ ও আইএনজিও পদে "উন্নয়ন/মানবিক কাজের অভিজ্ঞতা" অগ্রাধিকার পায়। ছোট কিন্তু তারিখসহ সম্পৃক্ততাও কাজে লাগে।', q:[
-  ['ngo_collab','Any collaboration with BRAC, ASA, SSS, other NGOs, the UNO office, Union Parishad, Social Services or Youth Development office — what, when, your role','ব্র্যাক, আশা, এসএসএস, অন্য এনজিও, ইউএনও অফিস, ইউনিয়ন পরিষদ, সমাজসেবা বা যুব উন্নয়ন অফিসের সঙ্গে কোনো কাজ — কী, কবে, আপনার ভূমিকা','',''],
-  ['ngo_disaster','Flood, cold-wave or other relief/disaster participation: dates, organisation, your role, people served, what you distributed','বন্যা, শৈত্যপ্রবাহ বা অন্য দুর্যোগে ত্রাণ/উদ্ধার কাজ: তারিখ, সংগঠন, আপনার ভূমিকা, কতজন উপকৃত, কী বিতরণ করেছেন','',''],
-  ['ngo_coop','Did the cooperative work with any NGO, bank or government project (e.g. PKSF, Palli Sanchay Bank, Department of Cooperatives programmes)? Your involvement','সমিতি কি কোনো এনজিও, ব্যাংক বা সরকারি প্রকল্পের সঙ্গে কাজ করেছে (যেমন পিকেএসএফ, পল্লী সঞ্চয় ব্যাংক, সমবায় অধিদপ্তরের কর্মসূচি)? আপনার সম্পৃক্ততা','',''],
- ]},
- { id:'prefs', pri:'high', title:'15. Career preferences', note:'Decides which of the four immediate doors to prioritise and what salary band to state on applications.', bn:'এর ওপর নির্ভর করে প্রথমে কোন সুযোগগুলোতে আবেদন করবেন এবং কত বেতন চাইবেন।', q:[
-  ['pf_salary','Minimum acceptable monthly salary (BDT) for a first NGO/INGO job; current salary if any','প্রথম এনজিও/আইএনজিও চাকরির জন্য সর্বনিম্ন গ্রহণযোগ্য মাসিক বেতন (টাকা); বর্তমান বেতন থাকলে','','input'],
-  ['pf_type','Field work vs office work? Finance track vs programme/community track? Long-term aim in 5 years?','মাঠের কাজ না অফিসের কাজ? হিসাব/ফিন্যান্স নাকি প্রোগ্রাম/কমিউনিটি? ৫ বছরে কোথায় দেখতে চান নিজেকে?','',''],
-  ['pf_study','Interest in CMA (ICMAB) / CA-CC / ACCA? In a master’s (which subject)? Could you study part-time while working?','সিএমএ (ICMAB) / সিএ-সিসি / ACCA-তে আগ্রহ? মাস্টার্স (কোন বিষয়)? চাকরির পাশাপাশি পার্ট-টাইম পড়তে পারবেন?','','input'],
-  ['pf_apply','Have you applied anywhere already (BRAC YPP, UNV, bdjobs)? Results? Do you have a bdjobs.com account and a UNV (app.unv.org) profile?','ইতিমধ্যে কোথাও আবেদন করেছেন (ব্র্যাক YPP, UNV, bdjobs)? ফলাফল? bdjobs.com অ্যাকাউন্ট ও UNV (app.unv.org) প্রোফাইল আছে?','','input'],
- ]},
- { id:'nice', pri:'nice', title:'16. Nice to have', note:'Useful, not essential.', bn:'কাজে লাগবে, তবে অপরিহার্য নয়।', q:[
-  ['n_udichi','Udichi Shilpi Goshthi, Tangail (tabla): since when; any notable performances or programmes; any leadership role','উদীচী শিল্পীগোষ্ঠী, টাঙ্গাইল (তবলা): কবে থেকে; উল্লেখযোগ্য পরিবেশনা বা অনুষ্ঠান; কোনো নেতৃত্বের ভূমিকা','','input'],
-  ['n_sadhu','Bagutia Sadhu Sangha: what it is, since when, your role','বাগুটিয়া সাধু সংঘ: এটি কী, কবে থেকে, আপনার ভূমিকা','','input'],
-  ['n_awards','Awards, scholarships, recognitions (academic prizes, board scholarship, youth award, blood-donation recognition)','পুরস্কার, বৃত্তি, স্বীকৃতি (একাডেমিক পুরস্কার, বোর্ড বৃত্তি, যুব পুরস্কার, রক্তদান স্বীকৃতি)','','input'],
-  ['n_media','Photos and media coverage of events you led (links / what exists)','আপনার নেতৃত্বে হওয়া অনুষ্ঠানের ছবি ও পত্রিকার খবর (লিংক / যা আছে)','','input'],
-  ['n_misc','Motorcycle licence? Willing to travel frequently? Any health or family constraints on posting?','মোটরসাইকেল লাইসেন্স আছে? ঘন ঘন ভ্রমণে রাজি? পোস্টিংয়ে স্বাস্থ্য বা পারিবারিক কোনো সীমাবদ্ধতা?','','input'],
-  ['n_anything','Anything else you think a recruiter should know about you','আর কিছু যা একজন নিয়োগকারীর জানা উচিত বলে মনে করেন','','tall'],
- ]},
-];
-const DOCS = [
- ['d_coop_app','Appointment letter from the cooperative','সমিতির নিয়োগপত্র'],
- ['d_coop_exp','Experience certificate from the cooperative (dated, signed, duties listed)','সমিতির অভিজ্ঞতার সনদ (তারিখ, স্বাক্ষর, দায়িত্বের বিবরণসহ)'],
- ['d_byso','BYSO president letter / committee resolution','BYSO সভাপতির পত্র / কমিটির রেজুলেশন'],
- ['d_pathagar','Elenga Sadharan Pathagar publicity secretary letter','এলেঙ্গা সাধারণ পাঠাগারের প্রচার সম্পাদকের পত্র'],
- ['d_blood','Kalihati Blood Foundation membership letter','কালিহাতী ব্লাড ফাউন্ডেশনের সদস্যপত্র'],
- ['d_majumdar','Majumdar Pathagar member secretary letter','মজুমদার পাঠাগারের সদস্য সচিব পত্র'],
- ['d_sahitya','Elenga Sahitya Sangsad column-writer letter + copies of columns','এলেঙ্গা সাহিত্য সংসদের কলাম লেখকের পত্র + কলামের কপি'],
- ['d_press','Tangail District Press Club membership card/letter','টাঙ্গাইল জেলা প্রেস ক্লাবের সদস্যপত্র/কার্ড'],
- ['d_arthik','Arthik Foundation founding-member letter','আর্থিক ফাউন্ডেশনের প্রতিষ্ঠাকালীন সদস্যপত্র'],
- ['d_rajabari','Rajabari Honours Association president letter','রাজাবাড়ী অনার্স অ্যাসোসিয়েশনের সভাপতি পত্র'],
- ['d_udichi','Udichi Tangail letter (tabla)','উদীচী টাঙ্গাইলের পত্র (তবলা)'],
- ['d_sadhu','Bagutia Sadhu Sangha membership letter','বাগুটিয়া সাধু সংঘের সদস্যপত্র'],
- ['d_degree','Bachelor’s certificate and transcript/mark sheet','স্নাতক সনদ ও ট্রান্সক্রিপ্ট/মার্কশিট'],
- ['d_hsc','HSC certificate and mark sheet','এইচএসসি সনদ ও মার্কশিট'],
- ['d_ssc','SSC certificate and mark sheet','এসএসসি সনদ ও মার্কশিট'],
- ['d_nid','NID (both sides)','জাতীয় পরিচয়পত্র (উভয় পাশ)'],
- ['d_tin','TIN certificate (if any)','টিআইএন সনদ (থাকলে)'],
- ['d_training','Training certificates','প্রশিক্ষণ সনদ'],
- ['d_photo','Recent formal photograph (for Bangladesh applications only)','সাম্প্রতিক ফরমাল ছবি (শুধু বাংলাদেশি আবেদনের জন্য)'],
- ['d_events','Photos / news clippings of events you led','আপনার নেতৃত্বে হওয়া অনুষ্ঠানের ছবি / পত্রিকার কাটিং'],
-];
-const KEY='munsur-intake-v1';
-const PRI={must:'Must have',high:'High value',nice:'Nice to have'};
-const ALL=[];
-let state={};
-try{ state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ state={}; }
-
-const form=document.getElementById('form');
-S.forEach(sec=>{
-  const el=document.createElement('section'); el.className='group'; el.id='sec-'+sec.id;
-  el.innerHTML=`<div class="group-head"><h2>${sec.title}</h2><span class="tag ${sec.pri}">${PRI[sec.pri]}</span><span class="count" id="cnt-${sec.id}"></span></div><p class="group-note">${sec.note}<br><span class="bn">${sec.bn}</span></p>`;
-  sec.q.forEach(([id,en,bn,why,kind])=>{
-    ALL.push({id,en,bn,sec:sec.title});
-    const q=document.createElement('div'); q.className='q'; q.dataset.id=id;
-    const ctrl = kind==='input' ? `<input type="text" id="${id}" autocomplete="off">` : `<textarea id="${id}" class="${kind==='tall'?'tall':''}"></textarea>`;
-    q.innerHTML=`<label for="${id}">${en}</label><span class="bn">${bn}</span>${why?`<div class="why"><b>Why:</b> ${why}</div>`:''}${ctrl}<div class="answer"></div>`;
-    el.appendChild(q);
-  });
-  form.appendChild(el);
-});
-const dl=document.getElementById('doclist');
-DOCS.forEach(([id,en,bn])=>{ const li=document.createElement('li'); li.className='chk'; li.innerHTML=`<input type="checkbox" id="${id}"><label for="${id}">${en}<br><span class="bn" style="color:var(--ink-3);font-size:13.5px">${bn}</span></label>`; dl.appendChild(li); });
-
-// restore
-ALL.forEach(({id})=>{ const el=document.getElementById(id); if(el && state[id]) el.value=state[id]; });
-DOCS.forEach(([id])=>{ const el=document.getElementById(id); if(el && state[id]) el.checked=true; });
-
-const statusEl=document.getElementById('status');
-let t;
-function save(){
-  ALL.forEach(({id})=>{ state[id]=document.getElementById(id).value; });
-  DOCS.forEach(([id])=>{ state[id]=document.getElementById(id).checked; });
-  state._updated=new Date().toISOString();
-  try{ localStorage.setItem(KEY,JSON.stringify(state)); statusEl.textContent='Saved '+new Date().toLocaleTimeString(); statusEl.className='status ok'; }
-  catch(e){ statusEl.textContent='Could not save in this browser — export often'; statusEl.className='status'; }
-  refresh();
-}
-function refresh(){
-  let done=0;
-  S.forEach(sec=>{ let d=0; sec.q.forEach(([id])=>{ const v=(document.getElementById(id).value||'').trim(); const q=document.querySelector(`.q[data-id="${id}"]`); if(v){d++; q.classList.add('done'); q.querySelector('.answer').textContent=v;} else {q.classList.remove('done'); q.querySelector('.answer').textContent='(no answer)';} }); done+=d; document.getElementById('cnt-'+sec.id).textContent=`${d} / ${sec.q.length} answered`; });
-  document.getElementById('prog').textContent=`${done} / ${ALL.length} answered`;
-  document.getElementById('fill').style.width=(100*done/ALL.length)+'%';
-}
-document.addEventListener('input',e=>{ clearTimeout(t); statusEl.textContent='Saving…'; statusEl.className='status'; t=setTimeout(save,500); });
-document.addEventListener('change',e=>{ if(e.target.type==='checkbox') save(); });
-refresh();
-
-function buildText(){
-  const lines=['CAREER INTAKE — SADIBNE MUNSUR','Exported: '+new Date().toLocaleString(),''];
-  S.forEach(sec=>{ lines.push('='.repeat(70), sec.title.toUpperCase()+'  ['+PRI[sec.pri]+']', '='.repeat(70)); sec.q.forEach(([id,en])=>{ const v=(document.getElementById(id).value||'').trim(); lines.push('', 'Q: '+en, 'A: '+(v||'(no answer)')); }); lines.push(''); });
-  lines.push('='.repeat(70),'DOCUMENTS COLLECTED','='.repeat(70));
-  DOCS.forEach(([id,en])=>lines.push((document.getElementById(id).checked?'[x] ':'[ ] ')+en));
-  lines.push('','----- MACHINE-READABLE COPY (do not edit) -----', JSON.stringify(state));
-  return lines.join('\n');
-}
-function toast(m){ const el=document.getElementById('toast'); el.textContent=m; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),2200); }
-async function exportAnswers(){
-  save();
-  const text=buildText(); const filename='Sadibne_Munsur_intake_answers_'+new Date().toISOString().slice(0,10)+'.txt';
-  try{ const d = window.claude && window.claude.use ? await window.claude.use('downloads') : null;
-    if(d){ await d.save({filename, data:text}); toast('File offered for download'); return; } }catch(e){ if(e && e.code==='cancelled'){ toast('Download cancelled'); return; } }
-  try{ const blob=new Blob([text],{type:'text/plain;charset=utf-8'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=filename; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href); a.remove();},1000); toast('Downloading '+filename); return; }catch(e){}
-  await copyAll(); toast('Download not possible here — answers copied to clipboard instead');
-}
-async function copyAll(){ save(); const text=buildText(); try{ await navigator.clipboard.writeText(text); toast('All answers copied — paste into WhatsApp, email or a document'); }catch(e){ const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); toast('Copied');}catch(_){toast('Could not copy automatically');} ta.remove(); } }
-document.getElementById('btnExport').onclick=exportAnswers; document.getElementById('btnExport2').onclick=exportAnswers;
-document.getElementById('btnCopy').onclick=copyAll; document.getElementById('btnCopy2').onclick=copyAll;
-document.getElementById('btnPrint').onclick=()=>{ save(); window.print(); };
-document.getElementById('btnImport').onclick=()=>document.getElementById('fileIn').click();
-document.getElementById('fileIn').onchange=e=>{ const f=e.target.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ try{ let txt=r.result; const m=txt.lastIndexOf('{'); const obj=JSON.parse(txt.slice(m)); ALL.forEach(({id})=>{ if(obj[id]!=null) document.getElementById(id).value=obj[id]; }); DOCS.forEach(([id])=>{ document.getElementById(id).checked=!!obj[id]; }); save(); toast('Answers loaded from file'); }catch(err){ toast('That file could not be read'); } }; r.readAsText(f); e.target.value=''; };
-document.getElementById('btnClear').onclick=()=>{ if(!confirm('Clear every answer on this page? Export first if you want to keep them.')) return; ALL.forEach(({id})=>document.getElementById(id).value=''); DOCS.forEach(([id])=>document.getElementById(id).checked=false); state={}; try{localStorage.removeItem(KEY);}catch(e){} refresh(); statusEl.textContent='Cleared'; statusEl.className='status'; };
-</script>
-
+<noscript><div class="wrap"><p style="padding:48px 0">This portfolio needs JavaScript. The CV is in the <code>documents/</code> folder.</p></div></noscript>
+<script src="assets/js/data.js?v=202609230737"></script>
+<script src="assets/js/app.js?v=202609230737"></script>
 </body>
 </html>

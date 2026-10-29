@@ -1,0 +1,15 @@
+# Private working material — never published to GitHub Pages
+.DS_Store
+Claude outputs/
+holding/
+portfolio/
+site/
+EVIDENCE-CHECKLIST.md
+tools/checklist-notes.md
+/Saad_Ibn_Mansur_CV.docx
+/Saad_Ibn_Mansur_CV.pdf
+documents/*.pdf
+!documents/Saad_Ibn_Mansur_CV.pdf
+assets/certificate/CamScanner*
+assets/certificate/WhatsApp*
+assets/certificate/*.jfif
