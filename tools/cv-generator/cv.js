@@ -8,11 +8,11 @@ const b = (t) => bullet(t, 0, { size: 20, after: 30 });
 const c = [];
 
 c.push(new Paragraph({ spacing: { after: 30 }, children: [new TextRun({ text: 'SAAD IBN MANSUR', font: 'Calibri', bold: true, size: 36, color: '1F3864' })] }));
-c.push(p('Dhaka, Bangladesh (Mirpur-11)  |  Permanent: Elenga, Kalihati, Tangail  |  +880 1864-964308  |  ibn.saad.mansur@gmail.com' + (WEB ? '' : '  |  LinkedIn: [TO ADD]'), { size: 19, after: 20 }));
+c.push(p('Dhaka, Bangladesh (Mirpur-11)  |  Permanent: Elenga, Kalihati, Tangail  |  +880 1864-964308  |  ibn.saad.mansur@gmail.com', { size: 19, after: 20 }));
 c.push(p('Bangladeshi national  |  Available from November 2026  |  Willing to relocate anywhere in Bangladesh', { size: 19, after: 40 }));
 
 c.push(sec('Profile'));
-c.push(p('Community-development and programme-support professional with an accounting degree, two years of project and finance experience (2024–2026) and eight years of voluntary community leadership in Tangail. Coordinated a BDT 275,000 women’s livelihood project for 20 beneficiaries (Bangladesh NGO Foundation-supported) and a three-week community flood-relief campaign that raised BDT 475,000 and reached 200 families; one year as Assistant Accountant of a 9,250-member multipurpose cooperative, including statutory-audit preparation. ' + (WEB ? 'President' : 'Founding President') + ' of a youth social-organisation branch with 200 volunteers for twenty months. BSAFE-certified by the UN Department of Safety and Security and trained as a PSEA facilitator by UNICEF; further certified in Safeguarding, MEAL, Project Management and Core Humanitarian Essentials by the Humanitarian Leadership Academy and DisasterReady. Fluent in English and Bangla; published columnist and former news contributor. Seeking programme, community-engagement or project-support roles with development and humanitarian organisations.', { size: 20, after: 40 }));
+c.push(p('Community-development and programme-support professional with an accounting degree, two years of project and finance experience (2024–2026) and eight years of voluntary community leadership in Tangail. Coordinated a BDT 275,000 women’s livelihood project for 20 beneficiaries (Bangladesh NGO Foundation-supported) and a three-week community flood-relief campaign that raised BDT 475,000 and reached 200 families; one year as Assistant Accountant of a 9,250-member multipurpose cooperative, including statutory-audit preparation. Founding President of a youth social-organisation branch with 200 volunteers for twenty months. BSAFE-certified by the UN Department of Safety and Security and trained as a PSEA facilitator by UNICEF; further certified in Safeguarding, MEAL, Project Management and Core Humanitarian Essentials by the Humanitarian Leadership Academy and DisasterReady. Fluent in English and Bangla; published columnist and former news contributor. Seeking programme, community-engagement or project-support roles with development and humanitarian organisations.', { size: 20, after: 40 }));
 
 c.push(sec('Core Competencies'));
 c.push(pm([{ t: 'Programme & project support: ', b: true }, 'project cycle management, beneficiary identification and selection, relief procurement and distribution, volunteer management (up to 35), stakeholder liaison (Union Parishad, UNO office, police, schools, businesses), beneficiary follow-up and monitoring, event management (1,000-visitor book fair).'], { size: 20, after: 30 }));
@@ -48,7 +48,7 @@ c.push(role('Intern (unpaid)', 'Saifur’s English', 'Jul – Dec 2023'));
 c.push(b('Supported day-to-day academic and administrative operations in a professional education environment.'));
 
 c.push(sec('Community Leadership (voluntary)'));
-c.push(role(WEB ? 'President' : 'Founding President [CONFIRM: the BYSO certification letter records “President”, not “Founding President”]', 'Bangladesh Youngster Social Organization (BYSO) — Tangail District Branch', 'Jun 2018 – Feb 2020'));
+c.push(role('Founding President', 'Bangladesh Youngster Social Organization (BYSO) — Tangail District Branch', 'Jun 2018 – Feb 2020'));
 c.push(ctx('BYSO: national, non-political, self-funded social organisation (est. 2013, Cumilla; approx. 23 branches) focused on the welfare and empowerment of women and children.'));
 c.push(b('Certified by the organisation’s Founder (15 July 2026): three merit-scholarship programmes, two tree-planting campaigns, two clothing distributions and one cleanliness drive delivered during the term.'));
 c.push(b('Led a 23-member executive committee, approx. 50 members and 200 volunteers; managed approx. BDT 350,000 per year from member subscriptions (BDT 300/month) and local donors.'));
@@ -61,7 +61,7 @@ c.push(b('Led Rajabari Book Fair 2026: 20 participating educational institutions
 c.push(role('Active Member', 'Kalihati Blood Foundation (WhatsApp donor network, 500+ members)', '2022 – present'));
 c.push(b('Coordinate emergency blood requests, matching donors with patients; regular O+ donor.'));
 
-c.push(role('Publicity Secretary and Librarian', 'Majumdar Pathagar (community library), Elenga' + (WEB ? '' : ' [CONFIRM]'), 'Jan 2022 – early 2023'));
+c.push(role('Publicity Secretary and Librarian', 'Majumdar Pathagar (community library), Elenga', 'Jan 2022 – early 2023'));
 c.push(b('Managed the collection and lending, expanded holdings through donations and promoted reading among young people at grassroots level.'));
 
 c.push(role('Founder', 'Kolorob Music Centre, Elenga (folk music and culture for young people)', 'Mar 2021 – present'));
@@ -71,7 +71,7 @@ c.push(b('Columnist and poet, Elenga Sahitya Sangsad quarterly literary magazine
 c.push(b('Former contributor, The Daily Observer (2023); founding team member, Khobor Jog (2024–25); musician (ukulele), Bangladesh Udichi Shilpi Goshthi, Tangail.'));
 
 c.push(sec('Education'));
-c.push(role('Bachelor’s (Honours) in Accounting — CGPA 3.06 / 4.00' + (WEB ? '' : ' [CONFIRM from the final transcript; the 4th-year result sheet alone shows 2.55]'), 'Government M. M. Ali College, Tangail (National University of Bangladesh)', '4th Year Exam 2023; results published Nov 2025'));
+c.push(role('Bachelor’s (Honours) in Accounting — CGPA 3.06 / 4.00', 'Government M. M. Ali College, Tangail (National University of Bangladesh)', '4th Year Exam 2023; results published Nov 2025'));
 c.push(role('Higher Secondary Certificate (Science) — GPA 3.83 / 5.00', 'Notre Dame College, Mymensingh', '2019'));
 c.push(role('Secondary School Certificate (Science) — GPA 5.00 / 5.00', 'Elenga High School, Tangail', '2017'));
 c.push(role('Bangladesh Scouts — active member', 'Elenga High School Scout Group, Kalihati Upazila', 'Classes VI – X'));
@@ -89,7 +89,14 @@ c.push(bulletm([{ t: 'Languages: ', b: true }, 'Bangla — mother tongue; Englis
 c.push(bulletm([{ t: 'Software: ', b: true }, 'MS Excel (formulas, sorting/filtering, tables, charts; basic PivotTables and lookups), Word, PowerPoint; Google Sheets and Forms; Tally and QuickBooks (basic).'], 0, { size: 20, after: 30 }));
 
 c.push(sec('References'));
-c.push(p(WEB ? 'Available on request.' : 'Available on request (three referees: BDUS Executive Director; academic referee; community-organisation referee) [TO ADD names and contacts].', { size: 19 }));
+const ref = (name, title, phone) => { c.push(pm([{ t: name, b: true }, ' — ' + title], { size: 20, after: 0, keepNext: true })); return p('Phone: ' + phone, { size: 19, after: 60, color: '404040' }); };
+if (WEB) c.push(p('Available on request.', { size: 19 }));
+else {
+  // referee names and phone numbers stay out of the public repo: referees.json is git-ignored
+  const fs = require('fs'), rf = require('path').join(__dirname, 'referees.json');
+  if (fs.existsSync(rf)) JSON.parse(fs.readFileSync(rf, 'utf8')).forEach((r) => c.push(ref(r.name, r.title, r.phone)));
+  else c.push(p('Available on request [TO ADD: referees.json missing].', { size: 19 }));
+}
 
 const out = process.env.CV_OUT || (WEB ? 'Saad_Ibn_Mansur_CV_web.docx' : 'Saad_Ibn_Mansur_CV.docx');
 const d = L.doc([c], { title: 'Saad Ibn Mansur — CV', footer: 'Saad Ibn Mansur — Curriculum Vitae', marginTop: 800, marginSide: 950 });

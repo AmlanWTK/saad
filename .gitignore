@@ -13,3 +13,4 @@ documents/*.pdf
 assets/certificate/CamScanner*
 assets/certificate/WhatsApp*
 assets/certificate/*.jfif
+tools/cv-generator/referees.json
