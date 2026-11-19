@@ -12,11 +12,11 @@ c.push(p('Dhaka (Mirpur-11)  |  Permanent: Elenga, Kalihati, Tangail  |  +880 18
 c.push(p('Portfolio: amlanwtk.github.io/saad  |  Bangladeshi national  |  Available from November 2026  |  Open to relocation', { size: 19, after: 40 }));
 
 c.push(sec('Profile'));
-c.push(p('Programme-support professional with an accounting degree and two years of NGO project and finance experience in Tangail. Coordinated a BDT 275,000 livelihood project for 20 women and a flood-relief campaign that raised BDT 475,000 for 200 families; kept the accounts and prepared the statutory audit of a 9,250-member cooperative. BSAFE-certified by the UN Department of Safety and Security and trained as a PSEA facilitator by UNICEF. Seeking programme, community-engagement or MEAL support roles with development and humanitarian organisations.', { size: 20, after: 40 }));
+c.push(p('Programme-support professional with an accounting degree and two years of NGO project and finance experience in Tangail, plus two years coordinating support for 72 families displaced by river erosion in Tangail and Sirajganj, and election monitoring in Tangail-4 for the February 2026 national election. Coordinated a BDT 275,000 livelihood project for 20 women and a flood-relief campaign that raised BDT 475,000 for 200 families; kept the accounts and prepared the statutory audit of a 9,250-member cooperative. BSAFE-certified by the UN Department of Safety and Security and trained as a PSEA facilitator by UNICEF. Seeking programme, community-engagement or MEAL support roles with development and humanitarian organisations.', { size: 20, after: 40 }));
 
 c.push(sec('Core Competencies'));
 c.push(pm([{ t: 'Programme delivery: ', b: true }, 'beneficiary identification and selection, procurement and distribution, volunteer management (up to 35), stakeholder liaison with Union Parishad, the UNO office, police, schools and local businesses.'], { size: 20, after: 30 }));
-c.push(pm([{ t: 'MEAL and safeguarding: ', b: true }, 'beneficiary verification, post-distribution follow-up, safeguarding and PSEA practice in work with women and children.'], { size: 20, after: 30 }));
+c.push(pm([{ t: 'MEAL and safeguarding: ', b: true }, 'beneficiary verification, post-distribution follow-up, survey forms in KoboToolbox, research ethics (informed consent, confidentiality), safeguarding and PSEA practice in work with women and children.'], { size: 20, after: 30 }));
 c.push(pm([{ t: 'Finance and administration: ', b: true }, 'ledgers, petty cash, expense vouchers, monthly bank reconciliation and financial statements, statutory audit preparation, budget tracking.'], { size: 20, after: 30 }));
 c.push(pm([{ t: 'Communication: ', b: true }, 'fluent written and spoken English and Bangla; reports and project documentation; news gathering and source verification.'], { size: 20, after: 30 }));
 
@@ -28,6 +28,11 @@ c.push(b('Prepared the full record set — cash books, vouchers, ledgers, member
 c.push(b('Kept savings and loan records for a member portfolio with an approximately 85% loan-recovery rate.'));
 c.push(b('Helped identify women eligible for income-generating support and followed up beneficiaries on outcomes.'));
 
+c.push(role('Monitoring Officer, Tangail-4 (Kalihati)', 'BEAR, Bangladesh Election Analysis & Research', 'Nov 2025 – Feb 2026'));
+c.push(ctx('Nationwide election-analysis network combining field monitoring with AI-based analysis, covering the 12 February 2026 national election.'));
+c.push(b('Monitored the pre-election period and polling in Tangail-4, a constituency of approx. 370,000 voters and 114 polling centres.'));
+c.push(b('Assessed whether voters’ rights were being upheld in the constituency and reported field findings to BEAR’s analysis team.'));
+
 c.push(role('Project Coordinator', 'Women’s Livelihood Project, BDUS (Bangladesh NGO Foundation)', 'Oct 2024 – Sep 2025'));
 c.push(b('Coordinated a 7-member team delivering sewing machines and livelihood support to 20 low-income women in five communities of Kalihati; budget approx. BDT 275,000.'));
 c.push(b('Led beneficiary identification and selection with community stakeholders, organised distribution and verified that support reached the intended women.'));
@@ -38,6 +43,10 @@ c.push(b('Procured and distributed food, drinking water, clothing, medicines, or
 
 c.push(role('Founding Team Member, news gathering', 'Khobor Jog online news portal, Tangail', 'Aug 2024 – Feb 2025'));
 c.push(b('Gathered news and verified sources before publication for a portal with 100,000+ followers; earlier, contributor to The Daily Observer (2023).'));
+
+c.push(role('Project Coordinator', 'River-erosion displacement response, BYSO — Tangail and Sirajganj', '2021 – 2023'));
+c.push(b('Coordinated support for 72 families displaced by river erosion: assessed needs through household visits and listing, and organised relief distribution.'));
+c.push(b('Referred families to Union Parishad and government support services, and followed up and reported on their situation.'));
 
 c.push(sec('Community Leadership (voluntary)'));
 c.push(role('Founding President', 'BYSO — Tangail District Branch', 'Jun 2018 – Feb 2020'));
@@ -65,7 +74,7 @@ c.push(cert('Project Management Essentials', 'DisasterReady, Cornerstone OnDeman
 c.push(cert('Core Humanitarian Essentials', 'DisasterReady, Cornerstone OnDemand Foundation', 'Sep 2026'));
 
 c.push(sec('Languages & Digital Skills'));
-c.push(pm([{ t: 'Languages: ', b: true }, 'Bangla (mother tongue), English (fluent).  ', { t: 'Software: ', b: true }, 'MS Excel (formulas, tables, charts; basic PivotTables and lookups), Word, PowerPoint, Google Sheets and Forms; Tally and QuickBooks (basic).'], { size: 20, after: 30 }));
+c.push(pm([{ t: 'Languages: ', b: true }, 'Bangla (mother tongue), English (fluent).  ', { t: 'Software: ', b: true }, 'MS Excel (PivotTables, lookups, charts), Power BI (basic dashboards), KoboToolbox (form design and data collection), Word, PowerPoint, Google Sheets and Forms; Tally and QuickBooks (basic).'], { size: 20, after: 30 }));
 
 c.push(sec('References'));
 const ref = (name, title, phone) => { c.push(pm([{ t: name, b: true }, ' — ' + title], { size: 20, after: 0, keepNext: true })); return p('Phone: ' + phone, { size: 19, after: 60, color: '404040' }); };
